@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颀阔智能 LOGO</title>
+    <style>
+        :root {
+            --primary-color: #1e2a78; /* 品牌深蓝 */
+            --accent-color: #8b5cf6; /* 品牌亮紫 */
+            --text-main: #1f2937;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: var(--font-family); 
+            color: var(--text-main); 
+            background-color: #ffffff; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- Logo Styles --- */
+        .logo-container { display: flex; align-items: center; gap: 14px; }
+        .logo-svg { height: 42px; width: auto; }
+        .logo-text { font-size: 22px; font-weight: 800; color: var(--primary-color); letter-spacing: 0.5px; line-height: 1; }
+        .logo-text span { display: block; font-size: 10px; color: var(--text-main); letter-spacing: 2.5px; text-transform: uppercase; margin-top: 4px; opacity: 0.7; }
+        
+        /* Optional: Scale up for better visibility in this standalone file */
+        @media (min-width: 768px) {
+            .logo-container { transform: scale(2); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1e2a78" />
+                    <stop offset="100%" stop-color="#8b5cf6" />
+                </linearGradient>
+            </defs>
+            <path d="M50 15C30.7 15 15 30.7 15 50C15 69.3 30.7 85 50 85C69.3 85 85 69.3 85 50C85 30.7 69.3 15 50 15ZM50 75C36.2 75 25 63.8 25 50C25 36.2 36.2 25 50 25C63.8 25 75 36.2 75 50C75 63.8 63.8 75 50 75Z" stroke="url(#logoGradient)" stroke-width="6"/>
+            <path d="M50 35V65M35 50H65" stroke="url(#logoGradient)" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="50" cy="50" r="10" fill="url(#logoGradient)"/>
+        </svg>
+        <div class="logo-text">
+            颀阔智能
+            <span>INTELLIGENCE QIKUO</span>
+        </div>
+    </div>
+
+</body>
+</html>
